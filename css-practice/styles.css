@@ -2,6 +2,45 @@ div {
     color: white;
     background-color: red;
     text-align: center;
-    font-size: 32;
+    font-size: 32px;
     font-weight: bold;
+}
+
+.odd {
+    color: black;
+    background-color: pink;
+    font-family: 'Verdana', 'DejaVu Sans', sans-serif;
+}
+
+#two {
+    background-color: white;
+    text-align: left;
+    color: blue;
+    font-size: 36px;
+}
+
+.odd.three {
+    font-size: 24px;
+}
+
+#four {
+    text-align: left;
+    color: black;
+    background-color: green;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.button {
+    font-size: 28px;
+    font-family: 'Helvetica', 'Times New Roman', sans-serif;
+}
+
+.button.me{
+    color: white;
+    background-color: black;
+}
+
+.button.no-me{
+    background-color: yellow;
 }
