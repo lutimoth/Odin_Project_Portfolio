@@ -1,14 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <script>
-        console.log("Hello, World!")
+        let message = 'Hello!';
+        console.log(message)
+        console.log(23+97)
+        console.log(2 + 3 + 4 + 5 + 7 + 10)
+        console.log((4 + 6 + 9)/ 77)
+
+        let a = 10
+        console.log(9 * a)
+        
+        let b = 7 * a
+        console.log(b)
+
+        const max = 57
+        let actual = max - 13
+        let percentage = actual / max
+
+        let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let length = txt.length;
+
+        console.log(txt, length)
+
+        let str = "Apple, Banana, Kiwi";
+        let part = str.slice(7, 13);
+        let sub = str.substring(7, 13);
+
+        console.log(part, sub)
+
+        let text = "Please visit Microsoft and Microsoft!";
+        /* use the /i flag so surround the string with / to be 
+            case insensitive */
+        /* using /g will use regex and do global matching*/
+        let newText = text.replace("Microsoft", "W3Schools");
+        console.log(newText)
+
+        /* strings have toUpperCase() and toLowerCase()
     </script>
 </body>
 </html>
