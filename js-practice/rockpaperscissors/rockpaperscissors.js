@@ -31,26 +31,20 @@ function playRound(playerSelection, computerSelection){
     }
 } 
 
+const container = document.querySelector('#gamespace')
+const content = document.createElement('div');
+content.classList.add('content');
 
+const buttons = document.querySelectorAll('button');
 
-function game(){
-    while (playerScore < 5 | compScore < 5){
-        const buttons = document.querySelectorAll('button');
-
-    buttons.forEach((button) => {
-        button.addEventListener('click', (e)=>{
-            playRound(e.id, getComputerChoice())
-        })
+buttons.forEach((button) => {
+    button.addEventListener('click', ()=>{
+        console.log(playRound(button.id, getComputerChoice()))
+        content.textContent = `${playerScore}-${compScore}`
     })
-    if (playerScore > compScore){
-            return "You Win!"
-        } else {
-            return "You Lose!"
-        }
+})
 
-
-    }
-}
+container.appendChild(content);
 
 // function game(){
 //     for (let i = 0; i < 5; i++){
