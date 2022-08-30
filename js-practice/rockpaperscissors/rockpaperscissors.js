@@ -31,18 +31,39 @@ function playRound(playerSelection, computerSelection){
     }
 } 
 
+
+
 function game(){
-    for (let i = 0; i < 5; i++){
-    var playerSelection = prompt("Choose rock, paper, or scissors: ").toLowerCase()
-    const computerSelection = getComputerChoice();
-    console.log(playRound(playerSelection, computerSelection))
-    }
+    while (playerScore < 5 | compScore < 5){
+        const buttons = document.querySelectorAll('button');
+
+    buttons.forEach((button) => {
+        button.addEventListener('click', (e)=>{
+            playRound(e.id, getComputerChoice())
+        })
+    })
     if (playerScore > compScore){
-        return "You Win!"
-    } else {
-        return "You Lose!"
+            return "You Win!"
+        } else {
+            return "You Lose!"
+        }
+
+
     }
 }
+
+// function game(){
+//     for (let i = 0; i < 5; i++){
+//     var playerSelection = prompt("Choose rock, paper, or scissors: ").toLowerCase()
+//     const computerSelection = getComputerChoice();
+//     console.log(playRound(playerSelection, computerSelection))
+//     }
+//     if (playerScore > compScore){
+//         return "You Win!"
+//     } else {
+//         return "You Lose!"
+//     }
+// }
 
 
 
